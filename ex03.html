@@ -3,9 +3,29 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Formulário</title>
 </head>
 <body>
-    
+    <form>
+        <label for="nome">Nome:</label>
+        <input type="text" id="nome" name="nome" minlength="3" placeholder="Escreva o seu nome"><br>
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" placeholder="Escreva o seu email" required><br>
+        <label for="idade">Idade:</label>
+        <input type="number" id="idade" name="idade" required><br>
+        <label for="data_nascimento">Data de nascimento:</label>
+        <input type="date" id="data_nascimento" name="data_nascimento"><br>
+        <label for="nacionalidade">Nacionalidade:</label>
+        <select id="nacionalidade" name="nacionalidade">
+            <option value="portuguesa">Portuguesa</option>
+            <option value="francesa">Francesa</option>
+            <option value="italiana">Italiana</option>
+            <option value="angolana">Angolana</option>
+          </select>
+        <br>
+        <label for="palavra_passe">Palavra-passe:</label>
+        <input type="password" id="palavra_passe" name="palavra_passe" minlength="8" pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}" required><br>
+        <input type="submit" value="Submeter formulário">
+      </form>
 </body>
 </html>
